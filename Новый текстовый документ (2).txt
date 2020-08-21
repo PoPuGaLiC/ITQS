@@ -66,13 +66,27 @@ body{
 }
 
 #governance{
-	display: flex;
+	display: grid;  
+	grid-template-areas: "header header header header"  
+                       "content content content content";
+    grid-template-columns: repeat(4, 1fr);  
+  	grid-template-rows: 187px 10px;
+
+	/*display: flex;
 	flex-direction: column;
 	justify-content: center;
-	align-items: center;
+	align-items: center;*/
 }
 
-.humans{
+.names{
+	grid-area: content;
+	color:rgba(235, 74, 31, 1);
+	font-size: 10px;
+	margin: auto 40px;
+}
+
+.humans>img{
+	grid-area: header;
 	border-radius: 100px;
     border: 5px solid rgba(153, 153, 153, 1);
     margin: auto 40px;

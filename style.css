@@ -124,14 +124,7 @@ div{
 	color:rgba(235, 74, 31, 1);
 	font-size: 50px;
 }
-.gall{
-
-}
 
 .gallery span:nth-child(1){
 	grid-column-start: 3;
 }
-
-/*#gallery>section{
-	display: none;
-}*/

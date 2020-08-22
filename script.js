@@ -1,23 +1,28 @@
+hide();
+view(0);
+
 for (img of document.getElementsByClassName('humans')){
-	img.onclick = function ActiveHuman(event){
-	let number = 0;
-	let position = 0;  
-	for (image of document.getElementsByClassName('humans')){
-		number++;
-		if (image == event.target){
-			position = number;
-		}
-    	image.style.borderColor = "#999999";
-    };
-    let activeNumber = 0;
-    for (cell of document.getElementsByClassName('gall')){
-    	activeNumber++;
-    	cell.style.display = "none";
-    	console.log(number);
-    	if(activeNumber == position){
-    		cell.style.display = "block";
-    	};
-    };
-    event.target.style.borderColor = "#EB4A1F";
-	};
+	img.onclick = activeHuman;
 }
+
+function activeHuman(event){
+	let humans = document.getElementsByClassName('humans');
+	hide();
+	for (i = 0; i < humans.length; i++){
+		if (humans[i] == event.target){
+			view(i);
+		}
+    };
+};
+
+function view(n){
+	document.getElementById("governance").children[n].style.borderColor = "#EB4A1F";
+	document.getElementsByClassName("gall")[n].style.display = "block";
+};
+
+function hide(){
+	for (image of document.getElementsByClassName('humans'))
+		image.style.borderColor = "#999999";
+	for (cell of document.getElementsByClassName('gall'))
+		cell.style.display = "none";
+};

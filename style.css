@@ -110,7 +110,7 @@ div{
 	font-size: 36px;
 }
 
-#gallery{
+.gallery{
 	display: grid;
 	grid-template-rows: 1fr auto;
 	grid-template-columns:  1fr 6fr 1fr;
@@ -120,12 +120,15 @@ div{
 	grid-column-gap: 20px;
 }
 
-#gallery>i{
+.gallery>i{
 	color:rgba(235, 74, 31, 1);
 	font-size: 50px;
 }
+.gall{
 
-#gallery span:nth-child(1){
+}
+
+.gallery span:nth-child(1){
 	grid-column-start: 3;
 }
 

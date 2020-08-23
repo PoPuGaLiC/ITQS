@@ -23,6 +23,10 @@ h1{
 	text-align: center;
 }
 
+.highlight{
+	color:rgba(235, 74, 31, 1);
+}
+
 #head{
 	display: flex;
 	align-items: center;
@@ -80,4 +84,34 @@ div{
 	color:rgba(153, 153, 153, 1);
 	font-size: 12px;
 	background-color: rgba(107, 109, 108, 1);
+}
+
+.list{
+	display: grid;
+	align-items: center;
+	align-content: center;
+	justify-content: center;
+	grid-template-columns: 1fr;
+
+	margin: 0px 4%;
+
+	color: rgba(107, 109, 108, 1);
+	font-size: 24px;
+}
+
+.list>span{
+	display: flex;
+	justify-content: space-between;
+	align-content: center;
+}
+
+.list>p{
+  	text-align: left;
+  	display: none;
+}
+
+
+.list>span>i{
+	color:rgba(235, 74, 31, 1);
+	font-size: 36px;
 }

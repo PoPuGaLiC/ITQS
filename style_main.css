@@ -39,36 +39,6 @@
 	font-size: 18px;
 }
 
-.list{
-	display: grid;
-	align-items: center;
-	align-content: center;
-	justify-content: center;
-	grid-template-columns: 1fr;
-
-	margin: 0px 4%;
-
-	color: rgba(107, 109, 108, 1);
-	font-size: 24px;
-}
-
-.list>span{
-	display: flex;
-	justify-content: space-between;
-	align-content: center;
-}
-
-.list>p{
-  	text-align: left;
-  	display: none;
-}
-
-
-.list>span>i{
-	color:rgba(235, 74, 31, 1);
-	font-size: 36px;
-}
-
 .gallery{
 	display: grid;
 	justify-items: center;

@@ -13,9 +13,8 @@ h1{
 .text{
 	color:rgba(107, 109, 108, 1);
 	font-size: 18px;
-  	width:70%;
+  	width:100%;
   	text-align: center;
-  	align-items: center;
 }
 
 #head{
@@ -97,15 +96,29 @@ div{
 	text-align: center;
 }
 
-.list>li{
-	display: flex;
-	justify-content: space-between;
-	margin: 5px 4%;
+.list{
+	display: grid;
+	grid-template-columns: 1fr;
+	margin: 0px 4%;
 	color: rgba(107, 109, 108, 1);
 	font-size: 24px;
+	align-items: center;
+	align-content: center;
+	justify-content: center;
 }
 
-.list>li>i{
+.list>span{
+	display: flex;
+	justify-content: space-between;
+	align-content: center;
+}
+
+.list>p{
+  	text-align: left;
+}
+
+
+.list>span>i{
 	color:rgba(235, 74, 31, 1);
 	font-size: 36px;
 }

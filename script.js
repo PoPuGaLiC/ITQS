@@ -1,6 +1,6 @@
 let position = 0;
 
-switching(position);
+switchingPeople(position);
 
 
 for (img of document.getElementsByClassName('humans')){
@@ -12,20 +12,20 @@ function activeHuman(event){
 	for (i = 0; i < humans.length; i++){
 		if (humans[i] == event.target) position = i;
     };
-    switching(position);
+    switchingPeople(position);
 };
 
-function switching(n){
-	hide();
-	view(n);
+function switchingPeople(n){
+	hidePeople();
+	viewPeople(n);
 }
 
-function view(n){
+function viewPeople(n){
 	document.getElementById("governance").children[n].style.borderColor = "#EB4A1F";
 	document.getElementsByClassName("gall")[n].style.display = "block";
 };
 
-function hide(){
+function hidePeople(){
 	for (image of document.getElementsByClassName('humans'))
 		image.style.borderColor = "#999999";
 	for (cell of document.getElementsByClassName('gall'))
@@ -37,23 +37,32 @@ document.getElementsByClassName('gallery')[0].children[2].onclick = switchingRig
 
 function switchingLeft(){
 	position = ((4+position-1))%4;
-	switching(position);
+	switchingPeople(position);
 };
 
 function switchingRight(){
 	position = ((4+position+1))%4;
-	switching(position);
+	switchingPeople(position);
 };
 
+for (i = 0; i < 4; i++){
+	document.getElementsByClassName("list")[0].children[i*2].children[0].onclick = rotate;
+}
 
-// (((4+position-1))%4)
-// for (arrow of document.getElementsByClassName("las la-chevron-right")){
-// 	arrow.onclick = rotate;
-// }
+function rotate(event){
+	if(event.target.style.transform == 'rotate(90deg)'){
+		event.target.style.transform = 'rotate(0deg)';
+		hideQuestion();
+	} else {
+		event.target.style.transform ='rotate(90deg)';
+		showQuestion();
+	}
+};
 
-// function rotate(event){
-// 	console.log("rot")
-// 	event.target.style.transform = 'rotate(' + 90 + 'deg)';
-// };
+function hideQuestion(){
 
+};
 
+function showQuestion(){
+
+};

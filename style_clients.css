@@ -1,0 +1,14 @@
+.highlight{
+	color:rgba(235, 74, 31, 1);
+}
+
+table {
+	width: 100%;
+
+	border: 2px solid grey;
+	border-collapse: collapse;
+} 
+
+td {
+	border: 2px solid grey;
+}

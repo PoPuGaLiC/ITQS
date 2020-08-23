@@ -3,10 +3,13 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Главная</title>
+	<link rel="shortcut icon" href="icon.png" type="image/png">
 	<link href="style.css" rel="stylesheet" type="text/css"/>
+	<link href="style_main.css" rel="stylesheet" type="text/css"/>
 	<link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
 </head>
 <body>
+
 	<header>
 	<div id="head">
 		<img src="logo.jpg" width="173px">
@@ -14,23 +17,26 @@
 			<span class="number">88005553535</span>(звонок бесплатный)<br/>Пн–Чт: 08:00–19:00, Пт: 08:00–18:00
 		</div>
 	</div>
-	<div class="menu">
-	<a href="">Главная</a>
-	<a href="">Клиентам</a>
-	<a href="">Рекрутинг</a>
-	<a href="">Местоположение</a>
+	<div id="headmenu">
+		<a href="">Главная</a>
+		<a href="">Клиентам</a>
+		<a href="">Рекрутинг</a>
+		<a href="">Местоположение</a>
 	</div>
 	</header>
+
 	<img src="image_1.jpg" width=100%>
+
 	<div id="about">
 		<div>
 			<h1>О компании</h1>
-			<section class="text">
+			<section class="text description">
 			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eu dapibus turpis. Fusce mattis turpis neque. Aenean eleifend quam a elit commodo placerat eget in magna. Morbi ac est dapibus, gravida turpis vitae, dapibus metus. Aenean scelerisque ipsum vel est imperdiet, vitae tempus dui viverra. Praesent urna elit, dictum efficitur justo vel, consequat posuere leo. Etiam pellentesque augue non risus aliquet ullamcorper. Donec id sapien ut dolor semper tempor consequat a elit. Pellentesque sit amet magna porttitor, tempor lacus id, vestibulum leo. Pellentesque porttitor, lectus sed bibendum vehicula, ligula tellus tincidunt elit, a accumsan libero magna at magna. Donec pulvinar, massa malesuada tincidunt dapibus, enim augue tincidunt augue, vel aliquet ex purus dignissim odio.
 			</section>
 		</div>
 			<img src="image_2.jpg" width="495px">
 	</div>
+
 	<h1>Руководство</h1>
 	<div id="governance">
 			<img class="humans" src="human_1.jfif" width="187px">
@@ -45,32 +51,32 @@
 			<span class="position"> Technical Writer </span>
 			<span class="position"> Software Engineer </span>
 			<span class="position"> Chief Technical Officer </span>
-		
 	</div>
+
 	<div class = "gallery">
 		<i class="las la-chevron-left"></i>
 		<div>
 			<section class = "gall">
 				<h1>Чайкин Виталий Юрьевич</h1>
-				<span class="text">
+				<span class="text description">
 					Donec quis blandit justo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut interdum mollis ante, eget auctor quam dictum at. Nullam non tincidunt libero, sit amet gravida nisi. Sed eget efficitur dui. Cras pharetra neque et mauris dapibus finibus. Duis nec libero dapibus, tristique leo ut, facilisis ligula. Donec non ultrices metus.
 				</span>
 			</section>
 			<section class = "gall">
 				<h1>Катаев Георгий Васильевич</h1>
-				<span class="text">
+				<span class="text description">
 					Aenean id felis sed purus fermentum tempor. Nulla varius, est ut cursus condimentum, ante neque eleifend mi, ut tincidunt dui dui vitae risus. Phasellus commodo mi nec elit dapibus, a molestie quam congue. Nunc arcu mauris, ultrices eu erat id, finibus ultricies libero. Vestibulum sit amet ex felis. Integer massa est, congue ut massa ac, egestas pellentesque elit. In ut laoreet neque, sit amet sodales ante.
 				</span>
 			</section>
 			<section class = "gall">
 				<h1>Скорняков Егор Андреевич</h1>
-				<span class="text">
+				<span class="text description">
 					Proin vel semper urna. Pellentesque gravida fringilla eros ut consequat. Quisque ac lectus sed quam suscipit pellentesque et non felis. Quisque vulputate, urna ut imperdiet blandit, augue tellus aliquam turpis, quis pulvinar est ante et sem. Nulla facilisi. Nam mollis elit mollis, feugiat orci vitae, accumsan dui. Sed scelerisque mauris in est placerat, in viverra ipsum convallis. Donec mattis risus id tempor ultricies. Praesent vitae aliquet ligula. Sed magna ante, porta vel aliquet luctus, venenatis sit amet sem. 
 				</span>
 			</section>
 			<section class = "gall">
 				<h1>Казанцев Александр Иванович</h1>
-				<span class="text">
+				<span class="text description">
 					Vestibulum sit amet ex felis. Integer massa est, congue ut massa ac, egestas pellentesque elit. In ut laoreet neque, sit amet sodales ante. Nullam non tincidunt libero, sit amet gravida nisi. Sed eget efficitur dui. Cras pharetra neque et mauris dapibus finibus. Duis nec libero dapibus, tristique leo ut, facilisis ligula. Donec non ultrices metus.
 				</span>
 			</section>
@@ -116,7 +122,9 @@
 			Nullam non tincidunt libero, sit amet gravida nisi. Sed eget efficitur dui.Vestibulum sit amet ex felis. Integer massa est, congue ut massa ac, egestas pellentesque elit. In ut laoreet neque, sit amet sodales ante.  Cras pharetra neque et mauris dapibus finibus. Duis nec libero dapibus, tristique leo ut, facilisis ligula. Donec non ultrices metus.
 		</p>
 	</div>
-	<p class = "footer"> © 2020 Общество с ограниченной ответственностью «Компания "Айти Куэс"»</p>
-	<script src="script.js"></script>
+
+	<p id = "footer"> © 2020 Общество с ограниченной ответственностью «Компания "Айти Куэс"»</p>
+
+	<script src="script_main.js"></script>
 </body>
 </html>

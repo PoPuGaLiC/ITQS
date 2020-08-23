@@ -4,23 +4,30 @@
 }
 
 h1{
-	color:rgba(235, 74, 31, 1);
-	font-size: 36px;
-	margin: 10px;
 	text-align: center;
+
+	margin: 10px;
+
+	font-size: 36px;
+	color:rgba(235, 74, 31, 1);
 }
 
 .text{
+	text-align: left;
+
 	color:rgba(107, 109, 108, 1);
 	font-size: 18px;
-  	width:100%;
-  	text-align: center;
+}
+
+.description{
+	text-align: center;
 }
 
 #head{
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	
 	margin: 0px;
 }
 
@@ -28,24 +35,28 @@ h1{
 	display: flex;
 	flex-direction: column;
 	text-align: right;
+
 	color:rgba(153, 153, 153, 1);
 }
 
 .number{
-	color:rgba(235, 74, 31, 1);
-	font-size: 28px;
 	padding: 0px;
 	margin: 0px;
+
+	color:rgba(235, 74, 31, 1);
+	font-size: 28px;
 }
 
-.menu{
+#headmenu{
 	margin: 0px;
 	padding: 10px;
+
 	background-color: rgba(107, 109, 108, 1);
 }
 
-.menu>a{
+#headmenu>a{
 	padding: 10px;
+
 	text-decoration: none;
 	color:rgba(255, 255, 255, 1);
 	font-size: 20px;
@@ -60,96 +71,13 @@ div{
 	margin: 20px;
 }
 
-#about{
-	margin: 10px;
-	padding: 50px;
-	display: flex;
-	align-items: center;
-}
-
-#about>div{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-
-#governance{
-	display: grid;
-	grid-template-columns:  repeat(4, 1fr);
-	justify-items: center;
-	grid-column-gap: 20px;
-}
-
-.humans{
-	border-radius: 100px;
-    border: 5px solid rgba(153, 153, 153, 1);
-    margin: auto 40px;
-}
-
-.name{
-	color:rgba(235, 74, 31, 1);
-	font-size: 26px;
-	text-align: center;
-}
-
-.position{
-	color:rgba(107, 109, 108, 1);
-	font-size: 18px;
-	text-align: center;
-}
-
-.list{
-	display: grid;
-	grid-template-columns: 1fr;
-	margin: 0px 4%;
-	color: rgba(107, 109, 108, 1);
-	font-size: 24px;
-	align-items: center;
-	align-content: center;
-	justify-content: center;
-}
-
-.list>span{
-	display: flex;
-	justify-content: space-between;
-	align-content: center;
-}
-
-.list>p{
-  	text-align: left;
-  	display: none;
-}
-
-
-.list>span>i{
-	color:rgba(235, 74, 31, 1);
-	font-size: 36px;
-}
-
-.gallery{
-	display: grid;
-	grid-template-rows: 1fr auto;
-	grid-template-columns:  1fr 6fr 1fr;
-	justify-items: center;
-	align-items: center;
-	text-align: center;
-	grid-column-gap: 20px;
-}
-
-.gallery>i{
-	color:rgba(235, 74, 31, 1);
-	font-size: 50px;
-}
-
-.gallery span:nth-child(1){
-	grid-column-start: 3;
-}
-
-.footer{
-	color:rgba(153, 153, 153, 1);
-	font-size: 12px;
+#footer{	
   	text-align: right;
+
 	margin: 0px;
 	padding: 10px;
+	
+	color:rgba(153, 153, 153, 1);
+	font-size: 12px;
 	background-color: rgba(107, 109, 108, 1);
 }

@@ -9,7 +9,7 @@ for (img of document.getElementsByClassName('humans')){
 
 function activeHuman(event){
 	let humans = document.getElementsByClassName('humans');
-	for (i = 0; i < humans.length; i++){
+	for (let i = 0; i < humans.length; i++){
 		if (humans[i] == event.target) position = i;
     };
     switchingPeople(position);
@@ -45,24 +45,30 @@ function switchingRight(){
 	switchingPeople(position);
 };
 
-for (i = 0; i < 4; i++){
-	document.getElementsByClassName("list")[0].children[i*2].children[0].onclick = rotate;
+let arr = document.getElementsByClassName("list")[0];
+
+for (let i = 0; i < 4; i++){
+	arr.children[i*2].children[0].onclick = rotate;
 }
 
 function rotate(event){
+	let question = 1;
+	for (let i = 0; i < 4; i++){
+			if (arr.children[i*2].children[0] == event.target) question = i*2+1;
+    	};
 	if(event.target.style.transform == 'rotate(90deg)'){
 		event.target.style.transform = 'rotate(0deg)';
-		hideQuestion();
+		hideQuestion(question);
 	} else {
 		event.target.style.transform ='rotate(90deg)';
-		showQuestion();
+		showQuestion(question);
 	}
 };
 
-function hideQuestion(){
-
+function hideQuestion(question){
+	document.getElementsByClassName("list")[0].children[question].style.display = "none";
 };
 
-function showQuestion(){
-
+function showQuestion(question){
+	document.getElementsByClassName("list")[0].children[question].style.display = "block";
 };

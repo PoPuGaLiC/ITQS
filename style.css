@@ -115,6 +115,7 @@ div{
 
 .list>p{
   	text-align: left;
+  	display: none;
 }
 
 

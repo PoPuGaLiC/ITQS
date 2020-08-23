@@ -21,6 +21,7 @@ h1{
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	margin: 0px;
 }
 
 #head>div{
@@ -38,6 +39,7 @@ h1{
 }
 
 .menu{
+	margin: 0px;
 	padding: 10px;
 	background-color: rgba(107, 109, 108, 1);
 }

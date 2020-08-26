@@ -57,6 +57,7 @@ h1{
 	padding: 10px;
 
 	background-color: rgba(107, 109, 108, 1);
+	border-bottom: 5px solid rgba(196, 196, 196, 1);
 }
 
 #headmenu>a{

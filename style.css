@@ -14,6 +14,7 @@ h1{
 
 .text{
 	text-align: left;
+	margin: 0px 2%;
 
 	color:rgba(107, 109, 108, 1);
 	font-size: 18px;
@@ -97,13 +98,7 @@ div{
 }
 
 .list{
-	display: grid;
-	align-items: center;
-	align-content: center;
-	justify-content: center;
-	grid-template-columns: 1fr;
-
-	margin: 0px 4%;
+	margin: 0px 2%;
 
 	color: rgba(107, 109, 108, 1);
 	font-size: 24px;
@@ -112,14 +107,7 @@ div{
 .list>span{
 	display: flex;
 	justify-content: space-between;
-	align-content: center;
 }
-
-.list>p{
-  	text-align: left;
-  	display: none;
-}
-
 
 .list>span>i{
 	color:rgba(235, 74, 31, 1);
